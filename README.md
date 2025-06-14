@@ -1,0 +1,2 @@
+# ctfstarterkit
+CTF Starter Script
