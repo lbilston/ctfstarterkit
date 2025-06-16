@@ -70,7 +70,7 @@ echo "[+] Downloading and installing ctftool using ZIP fallback..."
 if [ ! -d ~/CTF/tools/ctftool ]; then
     mkdir -p ~/CTF/tools/ctftool
     cd ~/CTF/tools/ctftool
-    wget https://github.com/zardus/ctftool/archive/refs/heads/main.zip -O ctftool.zip
+    wget https://github.com/zardus/ctftool/archive/refs/heads/master.zip -O ctftool.zip
     unzip ctftool.zip && mv ctftool-main/* . && rm -r ctftool-main ctftool.zip
     python3 -m venv venv
     source venv/bin/activate
