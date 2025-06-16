@@ -118,18 +118,19 @@ mkdir -p "$CUTTER_DIR"
 cd "$CUTTER_DIR"
 
 if [ ! -f cutter.AppImage ]; then
-    CUTTER_URL=$(curl -s https://api.github.com/repos/radareorg/cutter/releases/latest | grep "browser_download_url" | grep "x64.Linux.AppImage" | cut -d '"' -f 4)
+    CUTTER_URL=$(curl -s https://api.github.com/repos/radareorg/cutter/releases/latest | grep "browser_download_url" | grep "AppImage" | grep "x64" | cut -d '"' -f 4 | head -n 1)
 
     if [ -z "$CUTTER_URL" ]; then
         echo "[!] Failed to retrieve Cutter AppImage URL. Skipping Cutter installation."
     else
-        echo "[+] Downloading from $CUTTER_URL"
+        echo "[+] Downloading Cutter from $CUTTER_URL"
         wget "$CUTTER_URL" -O cutter.AppImage
         chmod +x cutter.AppImage
     fi
 else
     echo "[*] Cutter AppImage already exists. Skipping."
 fi
+
 
 echo "[+] Installing radare2..."
 if [ ! -d ~/CTF/tools/radare2 ]; then
