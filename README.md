@@ -6,10 +6,13 @@ Use responsibily blah blah blah...
 
 Created with help from ChatGPT for my own purposes.  Do what you want with it  I really don't care
 
-**To Install from Terminal**
+**To Install from Terminal (Debian / Ubuntu)**
 
-`curl -L https://raw.githubusercontent.com/lbilston/ctfstarterkit/refs/heads/main/ctf_starter_kit.sh | bash` 
+`curl -L https://raw.githubusercontent.com/lbilston/ctfstarterkit/refs/heads/main/ctf_starter_kit_debian.sh | bash` 
 
+**To Install from Terminal (Arch)**
+
+`curl -L https://raw.githubusercontent.com/lbilston/ctfstarterkit/refs/heads/main/ctf_starter_kit_arch.sh | bash` 
 
 
 ## CTF Starter Kit - Installation Summary
