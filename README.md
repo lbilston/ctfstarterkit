@@ -12,7 +12,7 @@ Created with help from ChatGPT for my own purposes.  Do what you want with it  I
 
 **To Install from Terminal (Arch)**
 
-`curl -L https://raw.githubusercontent.com/lbilston/ctfstarterkit/refs/heads/main/ctf_starter_kit_arch.sh | bash` 
+`curl -L https://raw.githubusercontent.com/lbilston/ctfstarterkit/refs/heads/main/ctf_starter_kit_arch.sh | sudo bash` 
 
 
 ## CTF Starter Kit - Installation Summary
